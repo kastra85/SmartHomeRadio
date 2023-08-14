@@ -5,13 +5,57 @@ public class RadioTest {
 
     @Test
 
-    public void stationsCountTest() {
+    public void stationsCountTest1() {
 
-        Radio radio = new Radio(30);
-        radio.setCurrentStation(15);
+        Radio radio = new Radio(10);
+        radio.setCurrentStation(8);
 
         int actual = radio.getCurrentStation();
-        int expected = 15;
+        int expected = 8;
+
+        Assertions.assertEquals(expected, actual);
+    }
+
+    @Test
+
+    public void stationsCountTest2() {
+
+        Radio radio = new Radio(10);
+        radio.setCurrentStation(10);
+
+        int actual = radio.getCurrentStation();
+        int expected = 0;
+
+        Assertions.assertEquals(expected, actual);
+    }
+
+
+    @Test
+
+    public void stationsCountTest3() {
+
+        Radio radio = new Radio(10);
+        radio.setCurrentStation(9);
+
+        radio.next();
+
+        int actual = radio.getCurrentStation();
+        int expected = 0;
+
+        Assertions.assertEquals(expected, actual);
+    }
+
+    @Test
+
+    public void stationsCountTest4() {
+
+        Radio radio = new Radio(10);
+        radio.setCurrentStation(0);
+
+        radio.prev();
+
+        int actual = radio.getCurrentStation();
+        int expected = 9;
 
         Assertions.assertEquals(expected, actual);
     }
