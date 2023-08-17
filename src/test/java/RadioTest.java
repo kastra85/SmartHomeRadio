@@ -189,7 +189,7 @@ public class RadioTest {
     }
     @Test
 
-    public void boundaryValueVolumeonTest1() {
+    public void boundaryValueVolumeTest1() {
         Radio radio = new Radio();
         radio.setCurrentVolume(1);
         radio.setCurrentVolume(0);
@@ -198,10 +198,10 @@ public class RadioTest {
         int expected = 0;
 
         Assertions.assertEquals(expected, actual);
-    }
+   }
     @Test
 
-    public void boundaryValueVolumeonTest2() {
+    public void boundaryValueVolumeTest2() {
         Radio radio = new Radio();
         radio.setCurrentVolume(1);
 
