@@ -8,7 +8,7 @@ public class Radio {
         } else {
             currentStation = 0;
         }
-    }
+     }
 
     public void prev() {
         if (currentStation != 0) {
