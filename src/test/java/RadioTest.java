@@ -29,6 +29,7 @@ public class RadioTest {
 
         Assertions.assertEquals(expected, actual);
     }
+
     @Test
 
     public void boundaryValueTest3() {
@@ -42,6 +43,7 @@ public class RadioTest {
 
         Assertions.assertEquals(expected, actual);
     }
+
     @Test
 
     public void boundaryValueTest4() {
@@ -55,6 +57,7 @@ public class RadioTest {
 
         Assertions.assertEquals(expected, actual);
     }
+
     @Test
 
     public void boundaryValuePrevTest1() {
@@ -82,6 +85,7 @@ public class RadioTest {
 
         Assertions.assertEquals(expected, actual);
     }
+
     @Test
 
     public void boundaryValuePrevTest3() {
@@ -95,6 +99,7 @@ public class RadioTest {
 
         Assertions.assertEquals(expected, actual);
     }
+
     @Test
 
     public void boundaryValuePrevTest4() {
@@ -111,7 +116,7 @@ public class RadioTest {
 
     @Test
 
-    public void negativeValueStationTest(){
+    public void negativeValueStationTest() {
         Radio radio = new Radio();
         radio.setCurrentStation(-1);
 
@@ -120,6 +125,7 @@ public class RadioTest {
 
         Assertions.assertEquals(expected, actual);
     }
+
     @Test
 
     public void boundaryValueStationTest1() {
@@ -132,6 +138,7 @@ public class RadioTest {
 
         Assertions.assertEquals(expected, actual);
     }
+
     @Test
 
     public void boundaryValueStationTest2() {
@@ -143,6 +150,7 @@ public class RadioTest {
 
         Assertions.assertEquals(expected, actual);
     }
+
     @Test
 
     public void boundaryValueStationTest3() {
@@ -154,6 +162,7 @@ public class RadioTest {
 
         Assertions.assertEquals(expected, actual);
     }
+
     @Test
 
     public void boundaryValueStationTest4() {
@@ -165,6 +174,7 @@ public class RadioTest {
 
         Assertions.assertEquals(expected, actual);
     }
+
     @Test
 
     public void boundaryValueStationTest5() {
@@ -176,9 +186,10 @@ public class RadioTest {
 
         Assertions.assertEquals(expected, actual);
     }
+
     @Test
 
-    public void negativeValueVolumeTest(){
+    public void negativeValueVolumeTest() {
         Radio radio = new Radio();
         radio.setCurrentVolume(-1);
 
@@ -187,6 +198,7 @@ public class RadioTest {
 
         Assertions.assertEquals(expected, actual);
     }
+
     @Test
 
     public void boundaryValueVolumeTest1() {
@@ -198,7 +210,8 @@ public class RadioTest {
         int expected = 0;
 
         Assertions.assertEquals(expected, actual);
-   }
+    }
+
     @Test
 
     public void boundaryValueVolumeTest2() {
@@ -210,6 +223,7 @@ public class RadioTest {
 
         Assertions.assertEquals(expected, actual);
     }
+
     @Test
 
     public void boundaryValueVolumeTest3() {
@@ -221,6 +235,7 @@ public class RadioTest {
 
         Assertions.assertEquals(expected, actual);
     }
+
     @Test
 
     public void boundaryValueVolumeTest4() {
@@ -232,6 +247,7 @@ public class RadioTest {
 
         Assertions.assertEquals(expected, actual);
     }
+
     @Test
 
     public void boundaryValueVolumeTest5() {
